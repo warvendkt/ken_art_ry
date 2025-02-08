@@ -1,4 +1,4 @@
-/*
+/* 
 
 Eatery Cafe Template 
 
@@ -6,103 +6,109 @@ http://www.templatemo.com/tm-515-eatery
 
 */
 
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-  body {
+html, body {
+    background: #1a1a1a; /* Dark charcoal for a luxurious backdrop */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0; /* Light grey for readability */
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-  }
+}
 
+/*---------------------------------------
+     TYPOGRAPHY               
+-----------------------------------------*/
 
-
-  /*---------------------------------------
-     TYPOGRAPHY              
-  -----------------------------------------*/
-
-  h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     line-height: inherit;
-  }
+}
 
-  h1 {
+h1 {
     color: #252525;
     font-size: 3em;
     line-height: 50px;
-  }
+}
 
-  h2 {
+h2 {
     color: #353535;
     font-size: 2em;
     padding-bottom: 10px;
-  }
+}
 
-  h3 {
+h3 {
     font-size: 1.5em;
     margin-bottom: 0;
-  }
+}
 
-  h3,
-  h3 a {
+h3, h3 a {
     color: #454545;
-  }
+}
 
-  p {
+p {
     color: #757575;
     font-size: 14px;
     font-weight: normal;
     line-height: 24px;
-  }
+}
 
-
-
-  /*---------------------------------------
+/*---------------------------------------
      GENERAL               
-  -----------------------------------------*/
+-----------------------------------------*/
 
-  html{
+html {
     -webkit-font-smoothing: antialiased;
-  }
+}
 
-  a {
+a {
     color: #252525;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     text-decoration: none !important;
-  }
+}
 
-  a:hover, a:active, a:focus {
+a:hover, a:active, a:focus {
     color: #ce3232;
     outline: none;
-  }
+}
 
-  ::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-  }
+}
 
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     cursor: pointer;
     background: #000000;
-  }
+}
 
-  .section-title {
+.section-title {
     padding-bottom: 40px;
-  }
+}
 
-  .section-title h2 {
+.section-title h2 {
     margin: 0;
-  }
+}
 
-  .section-title h4 {
+.section-title h4 {
     color: #bfbdbd;
     font-size: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 0;
-  }
+}
 
-  .overlay {
+.overlay {
     background: rgba(0,0,0,0.5);
     position: absolute;
     top: 0;
@@ -111,38 +117,36 @@ http://www.templatemo.com/tm-515-eatery
     left: 0;
     width: 100%;
     height: 100%;
-  }
+}
 
-  section {
+section {
     position: relative;
     padding: 100px 0;
-  }
+}
 
-  #team, 
-  #menu,
-  #testimonial {
+#team, 
+#menu,
+#testimonial {
     text-align: center;
-  }
+}
 
-  .about-image img,
-  .team-thumb img {
+.about-image img,
+.team-thumb img {
     width: 100%;
-  }
-  
-  #google-map iframe {
+}
+
+#google-map iframe {
     border: 0;
     width: 100%;
     height: 390px;
-  }
+}
 
-
-
-  /*---------------------------------------
+/*---------------------------------------
      BUTTONS               
-  -----------------------------------------*/
+-----------------------------------------*/
 
-  .section-btn {
-    background: #F2CA50;
+.section-btn {
+    background: #ce3232;
     border-radius: 0;
     border: 0;
     color: #f9f9f9;
@@ -150,15 +154,13 @@ http://www.templatemo.com/tm-515-eatery
     font-weight: normal;
     padding: 10px 25px;
     transition: 0.5s 0.2s;
-  }
+}
 
+/*---------------------------------------
+       PRE LOADER               
+-----------------------------------------*/
 
-
-  /*---------------------------------------
-       PRE LOADER              
-  -----------------------------------------*/
-
-  .preloader {
+.preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -170,15 +172,15 @@ http://www.templatemo.com/tm-515-eatery
     justify-content: center;
     align-items: center;
     background: none repeat scroll 0 0 #ffffff;
-  }
+}
 
-  .spinner {
+.spinner {
     border: 1px solid transparent;
     border-radius: 3px;
     position: relative;
-  }
+}
 
-  .spinner:before {
+.spinner:before {
     content: '';
     box-sizing: border-box;
     position: absolute;
@@ -192,180 +194,176 @@ http://www.templatemo.com/tm-515-eatery
     border: 1px solid #575757;
     border-top-color: #ffffff;
     animation: spinner .9s linear infinite;
-  }
+}
 
-  @-webkit-@keyframes spinner {
-    to {transform: rotate(360deg);}
-  }
+@-webkit-keyframes spinner {
+    to { transform: rotate(360deg); }
+}
 
-  @keyframes spinner {
-    to {transform: rotate(360deg);}
-  }
+@keyframes spinner {
+    to { transform: rotate(360deg); }
+}
 
+/*---------------------------------------
+      MENU               
+-----------------------------------------*/
 
-
-  /*---------------------------------------
-      MENU              
-  -----------------------------------------*/
-
-  .custom-navbar {
+.custom-navbar {
     border: none;
     margin-bottom: 0;
     padding: 25px 0;
-  }
+}
 
-  .custom-navbar .navbar-brand {
+.custom-navbar .navbar-brand {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-  }
+}
 
-  .custom-navbar .navbar-brand span {
-    color: #F2CA50;
-  }
+.custom-navbar .navbar-brand span {
+    color: #F2C53D;
+}
 
-  .top-nav-collapse {
+.top-nav-collapse {
     background: #ffffff;
-  }
+}
 
-  .custom-navbar .navbar-nav.navbar-nav-first {
+.custom-navbar .navbar-nav.navbar-nav-first {
     margin-left: 8em;
-  }
+}
 
-  .custom-navbar .navbar-nav.navbar-right li a {
-    padding-right: 12px;
-    padding-left: 12px;
-  }
+.custom-navbar .navbar-nav.navbar-right li a {
+    padding-right: 11px;
+    padding-left: 11px;
+}
 
-  .custom-navbar .navbar-nav.navbar-right .section-btn {
+.custom-navbar .navbar-nav.navbar-right .section-btn {
     display: inline-block;
     margin: 0.2em 0 0 1em;
-  }
+}
 
-  .custom-navbar .navbar-nav.navbar-right .section-btn:hover {
-    background: #292929;
+.custom-navbar .navbar-nav.navbar-right .section-btn:hover {
+    background: #D99C2B;
     color: #ffffff;
-  }
+}
 
-  .custom-navbar .navbar-nav.navbar-right .section-btn:focus {
+.custom-navbar .navbar-nav.navbar-right .section-btn:focus {
     color: #ffffff;
-  }
+}
 
-  .custom-navbar .navbar-nav.navbar-right .section-btn a {
+.custom-navbar .navbar-nav.navbar-right .section-btn a {
     padding: 10px 25px;
-  }
+}
 
-  .custom-navbar .nav .section-btn a:hover {
+.custom-navbar .nav .section-btn a:hover {
     color: #ffffff;
-  }
+}
 
-  .custom-navbar .nav li a {
+.custom-navbar .nav li a {
     font-size: 12px;
     font-weight: bold;
     color: #ffffff;
     padding-right: 22px;
     padding-left: 22px;
     text-transform: uppercase;
-  }
+}
 
-  .custom-navbar .nav li a:hover {
+.custom-navbar .nav li a:hover {
     background: transparent;
-    color:#F2CA50;
-  }
+    color: #ce3232;
+}
 
-  .custom-navbar .navbar-nav > li > a:hover,
-  .custom-navbar .navbar-nav > li > a:focus {
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus {
     background-color: transparent;
-  }
+}
 
-  .custom-navbar .nav li.active > a {
+.custom-navbar .nav li.active > a {
     background-color: transparent;
-    color: #F2CA50;
-  }
+    color: #ce3232;
+}
 
-  .custom-navbar .navbar-toggle {
+.custom-navbar .navbar-toggle {
     border: none;
     padding-top: 10px;
-  }
+}
 
-  .custom-navbar .navbar-toggle {
+.custom-navbar .navbar-toggle {
     background-color: transparent;
-  }
+}
 
-  .custom-navbar .navbar-toggle .icon-bar {
+.custom-navbar .navbar-toggle .icon-bar {
     background: #252525;
     border-color: transparent;
-  }
+}
 
-  @media(min-width:768px) {
+@media(min-width:768px) {
     .custom-navbar {
-      border-bottom: 0;
-      background: 0 0; 
+        border-bottom: 0;
+        background: 0 0; 
     }
 
     .custom-navbar.top-nav-collapse {
-      background: #ffffff;
-      -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-      padding: 12px 0;
+        background: #ffffff;
+        -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+        padding: 12px 0;
     }
 
     .top-nav-collapse .navbar-brand {
-      color: #454545;
+        color: #454545;
     }
 
     .top-nav-collapse .nav li a {
-      color: #575757;
+        color: #575757;
     }
 
     .top-nav-collapse .nav .section-btn a {
-      color: #ffffff;
+        color: #ffffff;
     }
-  }
+}
 
+/*---------------------------------------
+      HOME               
+-----------------------------------------*/
 
-
-  /*---------------------------------------
-      HOME              
-  -----------------------------------------*/
-
-  #home {
+#home {
     padding: 0;
-  }
+}
 
-  #home h1 {
+#home h1 {
     color: #ffffff;
     padding-bottom: 30px;
-  }
+}
 
-  #home h3 {
+#home h3 {
     color: #f9f9f9;
     font-size: 14px;
     line-height: inherit;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
-  }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .slider .col-md-8 {
-      padding-left: 0;
+        padding-left: 0;
     }
-  }
+}
 
-  .slider .owl-dots {
+.slider .owl-dots {
     position: absolute;
     top: 50%;
     right: 2em;
     justify-content: center;
-  }
+}
 
-  .owl-theme .owl-dots .owl-dot {
+.owl-theme .owl-dots .owl-dot {
     display: block;
-  }
+}
 
-  .owl-theme .owl-dots .owl-dot span {
+.owl-theme .owl-dots .owl-dot span {
     width: 12px;
     height: 12px;
     margin: 7px 10px;
@@ -375,14 +373,14 @@ http://www.templatemo.com/tm-515-eatery
     -webkit-backface-visibility: visible;
     transition: opacity 200ms ease;
     border-radius: 30px;
-  }
+}
 
-  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background-color: #ffffff;
     border-color: transparent;
-  }
+}
 
-  .slider .caption {
+.slider .caption {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -392,15 +390,14 @@ http://www.templatemo.com/tm-515-eatery
     color: #fff;
     cursor: e-resize;
     padding: 4em 0 0 2em;
-  }
+}
 
-  .slider .item {
+.slider .item {
     background-position: inherit;
     background-repeat: no-repeat;
-    background-attachment: local;
     background-size: cover;
-    height: 650px;
-  }
+    height: 800px;
+}
 
   .slider .item-first {
     background-image: url(../images/slider1.jpeg);
@@ -663,7 +660,7 @@ http://www.templatemo.com/tm-515-eatery
   }
 
   #testimonial h2 {
-    color: #ffffff;
+    color: #F2CA50;
   }
 
   #testimonial p,
@@ -673,7 +670,7 @@ http://www.templatemo.com/tm-515-eatery
   }
 
   #testimonial p {
-    color: #d9d9d9;
+    color: #FFF;
     font-size: 20px;
     line-height: 35px;
   }
@@ -684,13 +681,46 @@ http://www.templatemo.com/tm-515-eatery
 
   .tst-author h4,
   .tst-author span {
-    color: #F2CA50;
+    color: #F42300;
   }
 
   .tst-author span {
     margin-left: 5px;
   }
+  
+  .event-heading {
+          font-size: 2rem;
+          font-weight: 600;
+          color: #D99E32;
+          margin-bottom: 20px;
+     }
+ 
+ 
+     .event-list {
+          list-style-type: none;
+          padding: 0;
+     }
 
+     .event-list li {
+          font-size: 1.1rem;
+          color: #FFF;
+          line-height: 1.8;
+     }
+ 
+ 
+      .event-gallery {
+          display: flex;
+          justify-content: center; /* Centre l'image dans le conteneur */
+          margin-top: 20px;
+     }
+
+     .event-gallery img {
+          width: 400px; /* Fixe la largeur de l'image à 400px */
+          height: 400px; /* Fixe la hauteur de l'image à 400px */
+          object-fit: cover; /* Assure que l'image est bien cadrée sans déformation */
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     }
 
 
   /*---------------------------------------
