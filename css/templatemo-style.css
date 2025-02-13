@@ -10,7 +10,7 @@ http://www.templatemo.com/tm-515-eatery
 
 html, body {
     background: #1a1a1a; /* Dark charcoal for a luxurious backdrop */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rockwell', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #e0e0e0; /* Light grey for readability */
@@ -21,7 +21,7 @@ html, body {
 
 body {
     background: #ffffff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rockwell', sans-serif;
     overflow-x: hidden;
 }
 
@@ -146,7 +146,7 @@ section {
 -----------------------------------------*/
 
 .section-btn {
-    background: #ce3232;
+    background: #F2C53D;
     border-radius: 0;
     border: 0;
     color: #f9f9f9;
@@ -229,7 +229,7 @@ section {
 }
 
 .custom-navbar .navbar-nav.navbar-nav-first {
-    margin-left: 8em;
+    margin-left: 7em;
 }
 
 .custom-navbar .navbar-nav.navbar-right li a {
@@ -263,8 +263,8 @@ section {
     font-size: 12px;
     font-weight: bold;
     color: #ffffff;
-    padding-right: 22px;
-    padding-left: 22px;
+    padding-right: 20px;
+    padding-left: 20px;
     text-transform: uppercase;
 }
 
@@ -497,6 +497,8 @@ section {
   .team-thumb img {
     transition: 0.5s 0.2s;
   }
+  
+  
 
   .team-thumb:hover img {
     transform: scale(1.2);
