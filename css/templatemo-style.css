@@ -716,13 +716,8 @@ section {
           margin-top: 20px;
      }
 
-     .event-gallery img {
-          width: 400px; /* Fixe la largeur de l'image à 400px */
-          height: 400px; /* Fixe la hauteur de l'image à 400px */
-          object-fit: cover; /* Assure que l'image est bien cadrée sans déformation */
-          border-radius: 8px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     }
+   
+
 
 
   /*---------------------------------------
@@ -773,6 +768,7 @@ section {
     color: #ffffff;
   }
 
+   
 
 
   /*---------------------------------------
