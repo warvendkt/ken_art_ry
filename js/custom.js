@@ -115,3 +115,16 @@
     new WOW({ mobile: false }).init();
 
 })(jQuery);
+$(document).ready(function(){
+  var owl = $('.owl-carousel');
+  var video = $('video');
+
+  video.on('play', function() {
+      owl.trigger('stop.owl.autoplay');
+  });
+
+  // start after video end
+  video.on('ended', function() {
+      owl.trigger('play.owl.autoplay', [3000]);
+  });
+});
