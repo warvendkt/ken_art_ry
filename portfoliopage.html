@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="css/portcss.css">
+</head>
+<body>
+
+  <!-- ===== Acrylic Collection Section ===== -->
+  <section class="portfolio-section">
+    <h2 class="section-title">Acrylic Collection</h2>
+
+    <!-- Grid of acrylic artwork -->
+    <div class="image-grid">
+      <!-- Individual artwork card -->
+      <div class="image-item">
+        <img src="images/items/7.jpg" alt="Painting 1" onclick="openModal(this)">
+        <div class="caption"><h4>Color Burst</h4></div>
+      </div>
+      <div class="image-item">
+        <img src="images/items/6.jpg" alt="Painting 2" onclick="openModal(this)">
+        <div class="caption"><h4>Mystic Forest</h4></div>
+      </div>
+      <div class="image-item">
+        <img src="images/items/9.jpg" alt="Painting 3" onclick="openModal(this)">
+        <div class="caption"><h4>Hidden Face</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Oil on Canvas Collection Section ===== -->
+  <section class="portfolio-section">
+    <h2 class="section-title"> Canvas Collection</h2>
+
+    <!-- Grid of oil paintings -->
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="images/items/img4.jpg" alt="Painting 4" onclick="openModal(this)">
+        <div class="caption"><h4>Evening Light</h4></div>
+      </div>
+      <div class="image-item">
+        <img src="images/items/img5.jpg" alt="Painting 5" onclick="openModal(this)">
+        <div class="caption"><h4>Blue Motion</h4></div>
+      </div>
+      <div class="image-item">
+        <img src="images/items/10.jpg" alt="Painting 6" onclick="openModal(this)">
+        <div class="caption"><h4>Golden Silence</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Lightbox Modal for Image Enlargement ===== -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <!-- Close Button -->
+    <span class="close" onclick="closeModal()">&times;</span>
+    <!-- Enlarged Image Display -->
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <!-- External JavaScript file -->
+  <script src="js/portscript.js"></script>
+</body>
+</html>
