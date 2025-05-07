@@ -396,7 +396,7 @@ section {
     background-position: inherit;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 850px;
 }
 
   .slider .item-first {
@@ -404,7 +404,7 @@ section {
   }
 
   .slider .item-second {
-    background-image: url(../images/lk.svg);
+    background-image: url(../images/lkk.svg);
   }
 
   .slider .item-third {
