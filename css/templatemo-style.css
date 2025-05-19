@@ -1033,3 +1033,8 @@ section {
     }
   }
 
+@media (max-width: 576px) {
+        .hide-on-mobile {
+            display: none;
+        }
+    }
