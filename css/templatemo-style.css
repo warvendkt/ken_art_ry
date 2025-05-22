@@ -640,10 +640,12 @@ section {
       TESTIMONIAL             
   -----------------------------------------*/
 
-  #testimonial {
-    background: url('../images/kentestimo.png') center center no-repeat;
+#testimonial {
+    background: url('../images/ker.svg') center center no-repeat;
     background-size: cover;
-  }
+    height: 100vh; /* Or any height you want to set */
+}
+
 
   #testimonial .owl-dots {
     position: relative;
